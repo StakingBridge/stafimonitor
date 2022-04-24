@@ -1,4 +1,4 @@
-# Monitoring your StaFi and SaFiHub Validator 
+# Monitoring your StaFi and StaFiHub Validator 
 
 ### Monitor your CPU, RAM, Network and StaFi Chain stats
 
