@@ -17,9 +17,9 @@ This solution uses Telegraf, Prometheus and Grafana to provide users and node ma
 
 ```
 
-wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
-source /etc/lsb-release
-echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo tee /etc/apt/trusted.gpg.d/influxdb.asc >/dev/null source /etc/os-release
+echo "deb https://repos.influxdata.com/$%7BID%7D ${VERSION_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+sudo apt-get update && sudo apt-get install telegraf
 apt update
 apt install telegraf
 
@@ -63,10 +63,10 @@ The file will be such that:
   urls = ["http://localhost:26660"]
 # Output Plugin InfluxDB
 [[outputs.influxdb]]
-  database = "metricsdb"
-  urls = [ "http://stafimonitor.stakingbridge.com:8086" ] 
-  username = "metrics"
-  password = "password"
+  database = "stafi"
+  urls = [ "http://stats.stakingbridge.com:8086" ] 
+  username = "stafi"
+  password = "stafipassword"
 
 ```
 
