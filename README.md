@@ -2,7 +2,7 @@
 
 ### Monitor your CPU, RAM, Network and StaFi Chain stats
 
-This solution uses Telegraf, Prometheus and Grafana to provide users and node managers a monitoring tool to analyze CPU, RAM, network interfaces and I/O wait along with metrics from Stafi Chain that will be displayed in the public dashboard. Why should you monitor your node using [the public dashboard](https://stafimonitor.stakingbridge.com/)?	
+This solution uses Telegraf, Prometheus and Grafana to provide users and node managers a monitoring tool to analyze CPU, RAM, network interfaces and I/O wait along with metrics from Stafi Chain that will be displayed in the public dashboard. Why should you monitor your node using [the public dashboard](https://stats.stakingbridge.com/d/stafimonitor/stafi?orgId=1)?	
 - Control the use of resources in your server.
 ![](https://github.com/StakingBridge/stafimonitor/blob/main/images/fast_monitor.png?raw=true)
 - It allows you to detect problems, even before they happen.
@@ -64,7 +64,7 @@ The file will be such that:
 # Output Plugin InfluxDB
 [[outputs.influxdb]]
   database = "stafi"
-  urls = [ "http://stats.stakingbridge.com:8086" ] 
+  urls = [ "https://stats.stakingbridge.com:8086" ] 
   username = "stafi"
   password = "stafipassword"
 
