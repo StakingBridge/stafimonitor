@@ -80,7 +80,7 @@ prometheus = true
 # Address to listen for Prometheus collector(s) connections
 prometheus_listen_addr = "127.0.0.1:26660"
 # Instrumentation namespace
-namespace = "tendermint_testnet"
+namespace = "tendermint_mainnet"
 ```
 ### 4. LAUNCH TELEGRAF AND MONITOR YOUR NODE!
 
