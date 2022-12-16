@@ -85,7 +85,7 @@ namespace = "tendermint_testnet"
 ### 4. LAUNCH TELEGRAF AND MONITOR YOUR NODE!
 
 - To launch Telegraf: **sudo systemctl start telegraf**
-- Visit [https://stafimonitor.stakingbridge.com/](https://stafimonitor.stakingbridge.com/)
+- Visit [https://stats.stakingbridge.com/](https://stats.stakingbridge.com/)
 
 > From top side, use the search engine where it says ¨**Node**¨ and look for the alias that you have configured in the telegraf.conf file. For example, searching “Stakingbridge_TR-3970X” shows stats for stakingbridge.com validator.
 
