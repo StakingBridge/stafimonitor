@@ -65,8 +65,8 @@ The file will be such that:
 [[outputs.influxdb]]
   database = "stafi"
   urls = [ "https://stats.stakingbridge.com:8086" ] 
-  username = "stafi"
-  password = "stafipassword"
+  username = "stafimainnet"
+  password = "stafimainnetpassword"
 
 ```
 
