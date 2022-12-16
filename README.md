@@ -63,7 +63,7 @@ The file will be such that:
   urls = ["http://localhost:26660"]
 # Output Plugin InfluxDB
 [[outputs.influxdb]]
-  database = "stafi"
+  database = "stafimainnet"
   urls = [ "https://stats.stakingbridge.com:8086" ] 
   username = "stafimainnet"
   password = "stafimainnetpassword"
